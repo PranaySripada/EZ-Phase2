@@ -1,0 +1,313 @@
+In IT industries everything is about data, When we talk about data it is load of data not 1 or 2
+We need to have proven strategies or methods in order to work with data.
+
+Operation on data:-
+-----------------
+1] insert
+2] delete
+3] search
+4] sort
+
+As per the requirement about performing the above operations on data we have to choose the data structure
+wise.
+
+Types of DS:
+-----------
+1] Linear
+2] Non linear
+
+
+->Linear:
+  ------
+1] arrays
+2] stack,queue
+3] linked list
+
+->Non-linear:
+  ----------
+1] trees
+2] graphs
+3] hash(hash-map,hash-table)
+
+
+
+Linked list:
+-----------
+list of items is connected with links
+
+
+Types of linked list:
+--------------------
+1]single linked list
+2]double linked list
+3] circular linked list
+
+single linked list: 
+-------------------
+
+-> only for forwarded traversal(one way)
+
+	        
+Ex:	head-> |data|next|-> |data|next|-> |data|next|-> NULL
+	
+Implementation of Linked lists:
+------------------------------
+
+1] create the node
+2] make two partitions and name them as data and next
+3] add value to your node
+4] mark your first node as head node
+5] create other nodes
+6] establish links between the nodes
+Note: By default every node's next will be Null
+
+->Insertion in Single linked list:
+  -------------------------------
+insert at begining
+insert at last
+insert at between
+
+insert at begining:
+------------------
+1] create the new node
+2] newnode.next=current head node
+3] head=newnode
+
+insert at position/between:
+--------------------------
+1] create a newnode
+2] Traverse to get the position (for temp.next)
+3] newnode.next=temp.next
+4] temp.next=newnode
+
+
+
+
+*:-programs
+
+* Get one dynamic array for the given size and do all the operation of DS:- insert,delete,search,sort
+
+*get one matrix as input,display diagonal elements,non diagonal,upper diagonal,lower diagonal elements. 
+
+
+
+
+Linked List contains loop or cycle :
+----------------------------------
+Floyd algorithm is used to find whether the linked list is contains cycle or not.
+
+Washall Floyd Algorithm:
+----------------------
+1]To find out the meeting point if there is cycle point assign two pointers to head node.
+2]One pointer will jump one jump another pointer will jump two pointers at a time.
+3]if they are meeting at one node we will declare it that linked list contain Cycle in it.
+
+Finding start node of loop:
+------------------------
+1]Assign two pointer one with head node and another one with meeting point node.
+2]Now both of time will jump one step at a time.
+3]Where they are meeting is called start node of the loop.
+
+removing cycle from linked list:
+----------------------------
+1]Find out the node which is connected with starting node of the cycle and make it as none.
+
+
+
+A-->B-->C-->D-->E-->F
+            ^       |
+            |       .
+            I<--H<--G
+
+G is Meeting point
+D is start node of loop
+
+
+
+CIRCULAR LINKED LIST
+-----------------------
+1]The last is connected with first node of the linked list.
+2]output will be infinite loop.
+
+
+Deleting:
+--------
+1]First
+2]Last
+3]Between
+
+
+First Node:
+-----------
+1] Make the second node has head node and make the first node as Null.
+
+
+Last Node:
+----------
+1]Traverse till last but before node and make its next has Null.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------STACK--------------------------------
+
+This follows LIFO(Last In First Out) concept.
+
+Implementation:
+1]Using Arrays
+2]Using linked List
+3]Using in built modules
+
+insertion and delete conversion happens at one place which is on top.
+
+1]Stack implementation using Linked List:
+Method 1:
+---Inserting node at lost and deleting the last node becomes Stack.
+
+Method 2:
+---
+
+
+
+Note:Method 2 is efficient than method 1.
+
+
+-----------------------------QUEUE---------------------------
+
+This follows FIFO(First In First Out) concept.
+
+Insertion and deletion happens at two different ends (rare and front).
+
+
+Types of Queue:
+---------------
+1]Cricular Queue
+2]Priority Queue
+
+Priority Queue:
+----------------
+Jobs will be given as per priorities are assigned.
+As per the priority jobs will be alloted.
+
+Circular Queue:
+--------------
+
+In normal Queue concept even if there is space after deleting items we would not be able utilize 
+those spaces in order to use the spaces we are coming up with the concept called circular queue
+
+1] Initilizing circular queue from=rear=-1
+2] insertion happens rear, delete happens at front
+3] inserting first element front=rear=0
+4] insertion from second element rear=rear+1 and insert
+5] deletion: after deleting front element front=front+1
+
+
+
+Application of Stack:
+
+1]Expression Conversion
+--Infix
+--Prefix
+--Postfix
+
+INFIX TO POSTFIX
+---------------
+A+B+C:
+
+A+B.....AB+
+AB+    +C
+AB+C+
+
+A+B-C*D+E:
+
+C*D....CD* 
+A+B....AB+
+
+AB+-CD*+E....AB+CD*-+E
+AB+CD*-E+
+
+X/Y-(A+B)-(C*D)+Z+(E-F):
+
+XY/AB+-CD*-Z+EF-+
+
+
+
+
+
+
+-------------------------------------------------NON-LINEAR DATA STRUCTURE-------------------------------------------------
+
+
+To implement hirerical data or information wr use Tree DS.
+In a tree every node can have n-number of children
+
+Height:Look down and count the levels
+Depth:Look Up and count the levels.
+
+If a parent is having two children we call them Left and right child.
+Tree divided into two parts:
+1]Left Subtree
+2]Right Subtree
+
+
+***Note:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Every Node is lesser than its parent if it is lying at left side of parent.
+Every Node is greater than its parent if it is lying at right side of parent.
+
+  Ex:
+
+           15
+         /    \
+        9     18
+       / \   / \
+      4  13 17 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Keerthana
+Akshitha
+Ruchitha
+Harshini
+Sravya
+Bhavana
+Akshay
+Nithin
+Teja
+Abhay
